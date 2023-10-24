@@ -1,12 +1,12 @@
 import React from "react";
 
-function Dog({ props }) {
-  const { name, age } = props;
+function Dog(props) {
   return (
     <>
       <div>
-        <p>Dog Name: {name}</p>
-        <p>Age: {age}</p>
+        <p>Dog Name: {props.name}</p>
+        <p>Age: {props.age}</p>
+        <p>Habit: {props.habit}</p>
       </div>
     </>
   );
@@ -15,8 +15,8 @@ function Dog({ props }) {
 export function Example2() {
   return (
     <>
-      <Dog name="Fufu" age="3" />
-      <Dog name="Ace" age={5} />
+      <Dog name="Fufu" age="3" habit="jumping" />
+      <Dog name="Ace" age={5} habit="running" />
     </>
   );
 }
