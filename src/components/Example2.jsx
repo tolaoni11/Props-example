@@ -12,7 +12,7 @@ function Dog(props) {
   );
 }
 
-export function Example2() {
+export default function Example2() {
   return (
     <>
       <Dog name="Fufu" age="3" habit="jumping" />
