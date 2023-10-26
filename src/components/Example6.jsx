@@ -23,12 +23,17 @@ export default function Example6() {
     },
   ];
 
-  //map function
-
+  //map is used to loop through array
   return (
     <>
       {hobbies.map((h) => (
         <li>{h}</li>
+      ))}
+
+      <p>-----------</p>
+
+      {todos.map((todo) => (
+        <li>{todo.text}</li>
       ))}
     </>
   );
