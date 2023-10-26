@@ -32,8 +32,10 @@ export default function Example6() {
 
       <p>-----------</p>
 
-      {todos.map((todo) => (
-        <li>{todo.text}</li>
+      {todos.map((todo, index) => (
+        <li>
+          {index} {todo.text}
+        </li>
       ))}
     </>
   );

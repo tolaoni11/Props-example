@@ -37,8 +37,6 @@ export default function Example5() {
       },
     ];
 
-    //map function
-
     return (
       <>
         <div>{name}</div>
